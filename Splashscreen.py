@@ -1,14 +1,17 @@
 import turtle
 t = turtle.Turtle()
 t.speed(6)
-t.pensize(15)
+ps=25
+
 s = turtle.Screen()
 s.bgcolor("Black")
 
 c = ["aqua", "navy blue", "purple", "red", "magenta", "light green", "maroon"]
-uk =  ['red','white','blue']
+uk =  ['red','white','black']
 a = 100
 for i in range(a):
+    ps=ps-6
+    t.pensize(ps)
     t.color(uk[i % 7])
     t.penup()
     t.goto(-150, 0)
@@ -44,7 +47,7 @@ for i in range(a):
     t.right(135)
     t.forward(200)
     t.penup()
-    t.goto(100, 0)
+    t.goto(96, 0)
     t.left(90)
     t.pendown()
 

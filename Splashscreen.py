@@ -22,9 +22,11 @@ for i in range(a):
     t.pendown()
     t.right(45)
     t.forward(120)
+    t.left(45)
+    t.forward(150)
     t.penup()
     t.goto(-45,0)
-    t.left(45)
+    t.left(0)
     t.pendown()
 
     t.left(90)
